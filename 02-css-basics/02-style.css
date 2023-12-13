@@ -1,0 +1,63 @@
+/* 요소 선택자 */
+/* 요소들을 대상으로 CSS을 적용한다. */
+/* 즉, 해당 요소들 전부를 같은 CSS를 적용한다. */
+
+/* 모든 h1에 적용 */
+h1 {
+  color: blue;
+}
+
+/* 모든 p요소를 grey 색으로 */
+p {
+  color: grey;
+}
+
+/* 모든 a요소를 red색으로 */
+a {
+  color: red;
+}
+
+/* id 선택자 */
+/* 요소의 id 속성을 바탕으로 적용한다. */
+/* #{id} */
+/* id로 하는건 주로 하나를 CSS 적용할 때 사용한다. */
+#id-selector-h1 {
+  color: dodgerblue;
+}
+
+#id-selector-p {
+  color: chocolate;
+}
+
+#id-selector-h2 {
+  color: coral;
+}
+
+.message-sender {
+  color: purple;
+}
+
+.message-body {
+  color: blue;
+}
+
+/* 알아면 좋은 부수적인 것들 */
+
+/* 전체 선택자 */
+/* *은 와일드 카드다. 모든 요소가 들어올 수 있다란 의미 */
+/* 즉, 모두에게 적용이 된다. */
+
+* {
+  text-align: center;
+}
+
+/* 복합 선택자 */
+/* 띄어쓰기 없이 합치면 모두 만족하는 요소 */
+#minkyu.username {
+  color: green;
+}
+
+/* 클래스를 띄어쓰기로 구분하면 한번에 여러 개 클래스를 쓸 수 있다. */
+.red.blue {
+  color:yellow;
+}
