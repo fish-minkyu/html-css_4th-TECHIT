@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="01-style.css">
+</head>
+<body>
+  <h1>Box Model</h1>
+
+  <!-- "inline -> block" -->
+  <form>
+    <img src="../01-html/java.png" alt="java-block" class="display-block">
+    <label class="display-block">
+      이름
+      <input type="text">
+    </label>
+    <label class="display-block">
+      나이
+      <input type="text">
+    </label>
+  </form>
+
+<!-- "block -> inline" -->
+  <!-- inline 요소는 width height가 무의미하다. -->
+  <!-- 즉, inline은 넓이와 높이를 가질 수 없다. -->
+  <div class="box display-inline">a</div>
+  <div class="box display-inline">b</div>
+
+<!-- box model 속성 정리 -->
+  <div class="box">
+    <div class="small-box">small-box</div>
+    <div class="small-box">small-box</div>
+  </div>
+  
+  <div class="box margin-4">box 0</div>
+  <div class="box pading-4">box 1</div>
+  <div class="box margin-all padding-all">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero itaque a assumenda repellendus aut in sunt quae reiciendis veritatis quis quisquam, soluta temporibus dicta, sed omnis et voluptate doloribus aliquid!</div>
+  <div class="box margin-all padding-all">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero itaque a assumenda repellendus aut in sunt quae reiciendis veritatis quis quisquam, soluta temporibus dicta, sed omnis et voluptate doloribus aliquid!</div>
+  <div class="box margin-all padding-all">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero itaque a assumenda repellendus aut in sunt quae reiciendis veritatis quis quisquam, soluta temporibus dicta, sed omnis et voluptate doloribus aliquid!</div>
+  <div class="box margin-all padding-all">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero itaque a assumenda repellendus aut in sunt quae reiciendis veritatis quis quisquam, soluta temporibus dicta, sed omnis et voluptate doloribus aliquid!</div>
+
+  <!-- content가 아닌 요소의 크기 기준으로 -->  
+  <!-- width height 조정 -->
+  <div class="box shorthand border-box">shorthand</div>
+
+  <!-- 테두리 곡선화 -->
+  <div class="box border border-box rounded">box</div>
+  <div class="box border border-box circular">box</div>
+
+  <!-- object-fit -->
+  <img src="../01-html/java.png" alt="java"
+  id="java-img"
+  class="display-block margin-all object-fit">
+
+  <!-- object-fit-contain -->
+  <img src="../01-html/java.png" alt="java"
+  id="java-img"
+  class="display-block margin-all object-fit-contain">
+
+  <!-- object-fit-cover -->
+  <img src="../01-html/java.png" alt="java"
+  id="java-img"
+  class="display-block margin-all object-fit-cover">
+
+  <!-- 네이버 로그인 -->
+  <div id="login-container" class="border">
+    <p>네이버를 더 안전하고 편리하게 이동하세요</p>
+    <div id="login-big-button" class="margin-auto">NAVER 로그인</div>
+    <p>아이디 찾기 | 비밀번호 찾기 | 회원가입</p>
+  </div>
+</body>
+</html>

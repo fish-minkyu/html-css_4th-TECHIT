@@ -1,0 +1,97 @@
+/* body에 마진 주기 */
+body {
+  margin: 40px;
+  height: 3000px;
+}
+
+.box {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  color: white;
+}
+
+/* relative */
+/* 원래 그려져야 되는 위치에서 top, left, right, bottom만큼 움직인다. */
+/* 원래 배치해야 되는 위치는 그대로 둔다. */
+.relative {
+  background-color: green;
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+
+/* absolute */
+/* static이 아닌 이상 가까운 조상 요소를 기준으로 한다. (없으면 body를 기준으로 한다.) */
+/* absolute는 일반적인 배치 방식에서 벗어나서 원래 없었던것처럼 동작하여 원위치에 다른 요소들이 들어온다. */
+.absolute {
+  background-color: yellowgreen;
+  position: absolute;
+  left: 450px;
+  top: 200px
+}
+
+#big-box {
+  background-color: gray;
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+/* UI를 겹치게 해보자 absolute UI */
+#menu-bar {
+  /* 정적 태그가 되면 absolute가 기준을 삼을 수 없다. */
+  position: relative;
+  border: 0.5px solid lightgray;
+  width: 500px;
+  height: 100px;
+  box-sizing: border-box;
+}
+
+#menu-next-button {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  box-sizing: border-box;
+  border: 0.5px solid lightgray;
+  right: -40px;
+  top: 10px;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* fixed */
+.fixed {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: darkgreen;
+
+  text-align: center;
+}
+
+.fixed-2 {
+  position: fixed;
+  left: 50px;
+  top: 50px;
+  background-color: darkblue;
+  border-radius: 50%;
+
+  text-align: center;
+}
+
+/* sticky */
+.sticky {
+  position: sticky;
+  background-color: chocolate;
+  top: 25px;
+  left: 100px;
+}
+
+.bottom-margin {
+  margin-bottom: 1000px;
+}
